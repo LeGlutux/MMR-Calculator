@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
 
-function App() {
+export default () => {
+  // const db = firebase.firestore()
+  // const write = () => {
+  //   db
+  //   .collection("Test")
+  //   .doc("123")
+  //   .set({urine: "green"})
+  // }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='flex flex-col h-screen w-full items-center bg-black'>
+      <title className='flex h-12 w-full my-8 justify-center text-3xl text-white'>MMR Calculator</title>
+      <div className='flex flex-col h-full w-full items-center'>
+        <h1 className="h-1/2">
+          Jeu déjà existant
+        </h1>
+        <h1 className="h-1/2">
+          Ajouter un nouveau jeu
+          <button onClick={() => {}}>Click me !</button>
+        </h1>
+      </div>
     </div>
+    
   );
 }
-
-export default App;
